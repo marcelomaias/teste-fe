@@ -92,6 +92,10 @@ select,
   width: 100%;
   color: inherit;
 }
+input[type='range'] {
+  border: none;
+  padding: 0;
+}
 .react-tags-wrapper {
   border: none;
   padding: 0;
@@ -153,4 +157,6 @@ small {
   display: flex;
   justify-content: space-between;
   margin-left: 130px;
+  margin-top: -10px;
+  margin-bottom: 1em;
 }

@@ -94,17 +94,18 @@ class Cadastro extends Component {
           </div>
         </div>
         <div>
+          <small className="info">* indica campo necessário.</small>
           {hasError && <small className="error">Apenas letras e 20 caracteres são permitidos</small>}
           <div className="nome">
             <TextInput
               onKeyUp={this.handleName}
               name="nome"
-              label="Nome"
+              label="Nome*"
               type="text"
               id="nome"
               value={this.state.nome}
               onChange={this.handleInput}
-              placeholder="Nome"
+              placeholder="Nome*"
             />
             <TextInput
               name="sobrenome"

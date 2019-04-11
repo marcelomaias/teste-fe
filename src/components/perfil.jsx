@@ -93,10 +93,6 @@ class Perfil extends Component {
             newsletters. {telefone && `Para me contatar ligue no telefone ${telefone}.`}
           </p>
 
-          {/* {tags.map(tag => (
-          <span key={tag.id}>{tag.text}, </span>
-        ))} */}
-
           <form onSubmit={this.handleSubmit} noValidate>
             <button>Confirmar</button>
           </form>
