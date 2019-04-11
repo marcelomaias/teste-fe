@@ -10,6 +10,6 @@
 
 <h4>Comentários</h4>
 
-<p>Como foi feito apenas o front, para a foto foi utilizado o objeto "URL.createObjectURL" para armazenar uma uri temporária, que desaparece no reload</p>
+<p>Como foi feito apenas o front, para a foto foi utilizado o objeto "URL.createObjectURL" para armazenar uma url temporária, que desaparece no reload.</p>
 
 <p>Na página Perfil, clicando em "Confirmar" é feito um POST request para um endpoint fictício "/pefis",  e loga o response e também o erro 404.</p>
