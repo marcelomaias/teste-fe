@@ -125,6 +125,7 @@ class Editar extends Component {
           </div>
         </div>
         <div>
+          <small className="info">* indica campo necessário.</small>
           {hasError && <small className="error">Apenas letras e 20 caracteres são permitidos</small>}
           <TextInput
             onKeyUp={this.handleName}
