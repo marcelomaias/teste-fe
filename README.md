@@ -8,7 +8,7 @@
 
 <p>Preview pode ser visualizado em <a href="https://marcelomaias.net/projects/teste-fe/">Teste FE.</a></p>
 
-<h4>Comentário</h4>
+<h4>Comentários</h4>
 
 <p>Como foi feito apenas o front, para a foto foi utilizado o objeto "URL.createObjectURL" para armazenar uma uri temporária, que desaparece no reload</p>
 
