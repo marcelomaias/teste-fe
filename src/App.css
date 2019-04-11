@@ -160,3 +160,6 @@ small {
   margin-top: -10px;
   margin-bottom: 1em;
 }
+.info {
+  display: block;
+}
