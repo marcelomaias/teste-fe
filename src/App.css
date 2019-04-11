@@ -1,33 +1,156 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(90, 110, 135);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+img {
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+}
+.btn,
+.saveBtn,
+button {
+  display: block;
+  padding: 0.75rem 2rem;
+  background: #ccc;
+  border-radius: 10px;
+  text-align: center;
+  color: inherit;
+  font-weight: 700;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid #666;
+}
+.saveBtn {
+  display: inline-block;
+  margin: 1em 0 0 128px;
+  width: 180px;
+}
+.saveBtn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+img + label.btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: rgb(90, 110, 135);
+  font-weight: 700;
+}
+.fotoArea {
+  text-align: center;
+}
+.fotoArea label {
+  margin-bottom: 1em;
+}
+form,
+.perfil {
+  display: flex;
+}
+.perfil {
+  max-width: 780px;
+}
+.perfil > * {
+  padding: 0 2em;
+}
+.perfil > *:first-child {
+  border-right: 1px solid rgb(90, 110, 135);
+}
+input,
+select,
+.react-tags-wrapper {
+  font: inherit;
+  padding: 0.3em 0.4em;
+  border: 1px solid rgb(90, 110, 135);
+  width: 100%;
+  color: inherit;
+}
+.react-tags-wrapper {
+  border: none;
+  padding: 0;
+}
+.tag-wrapper {
+  background: #ccc;
+  padding: 0.5em 1em;
+  display: inline-block;
+  margin: 1em 1em 0 0;
+  border: 1px solid #666;
+}
+.ReactTags__remove {
+  margin-left: 1em;
+  cursor: pointer;
+}
+form > div {
+  padding: 1em;
+}
+.form-element {
+  width: 540px;
+  display: flex;
+  padding: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.form-element label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  padding: 8px 15px;
+  font-weight: 700;
+}
+.fileField {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.fileField + label {
+  font-size: 1.25em;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fileField:focus + label,
+.fileField + label:hover {
+  background-color: rgb(190, 190, 190);
+}
+.fileField + label {
+  cursor: pointer;
+}
+.error {
+  color: orangered;
+}
+small {
+  margin-left: 128px;
+}
+.ages {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 130px;
 }
