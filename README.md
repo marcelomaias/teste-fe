@@ -6,7 +6,7 @@
 
 <h2>Teste FE</h2>
 
-<p>Preview pode ser visualizado em <a href="https://github.com/marcelomaias/projects/teste-fe">Teste FE.</a></p>
+<p>Preview pode ser visualizado em <a href="https://marcelomaias.net/projects/teste-fe/">Teste FE.</a></p>
 
 <h4>Comentário</h4>
 
