@@ -4,14 +4,9 @@ import axios from 'axios'
 
 class Perfil extends Component {
   state = {
-    picture: null
+    picture: this.props.location.state.data.picture
   }
-  componentDidMount() {
-    const { data } = this.props.location.state
-    this.setState({
-      picture: data.picture
-    })
-  }
+
   handleSubmit = e => {
     e.preventDefault()
     const novoPerfil = this.props.location.state.data
@@ -32,7 +27,7 @@ class Perfil extends Component {
   }
   render() {
     const { data } = this.props.location.state
-    const { nome, sobrenome, email, id, picture, estado, tags, telefone, idade } = data
+    const { nome, sobrenome, email, id, estado, tags, telefone, idade } = data
     // console.log(data)
 
     const idadeFiltrada = () => {
@@ -69,9 +64,9 @@ class Perfil extends Component {
       <div className="perfil">
         <div className="fotoArea">
           <input id="file" type="file" onChange={this.handlePic} className="fileField" />
-          {picture && <img src={picture} alt="profile pic" />}
+          {this.state.picture && <img src={this.state.picture} alt="profile pic" />}
 
-          {picture ? (
+          {this.state.picture ? (
             <label htmlFor="file" className="btn">
               Alterar foto
             </label>
