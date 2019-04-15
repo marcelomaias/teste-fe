@@ -14,39 +14,20 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter]
 class Editar extends Component {
   state = {
     id: 12345,
-    nome: '',
-    sobrenome: '',
-    idade: '',
-    email: '',
-    telefone: '',
-    estado: '',
-    pais: '',
-    tags: [],
-    endereco: '',
-    casa: '',
-    trabalho: '',
-    novidades: '',
-    picture: null
-  }
-
-  componentDidMount() {
-    const { data } = this.props.location.state
-    this.setState({
-      nome: data.nome,
-      sobrenome: data.sobrenome,
-      idade: data.idade,
-      email: data.email,
-      telefone: data.telefone,
-      estado: data.estado,
-      pais: data.pais,
-      interesses: data.interesses,
-      endereco: data.endereco,
-      casa: data.casa,
-      tags: data.tags,
-      trabalho: data.trabalho,
-      novidades: data.novidades,
-      picture: data.picture
-    })
+    nome: this.props.location.state.data.nome,
+    sobrenome: this.props.location.state.data.sobrenome,
+    idade: this.props.location.state.data.idade,
+    email: this.props.location.state.data.email,
+    telefone: this.props.location.state.data.telefone,
+    estado: this.props.location.state.data.estado,
+    pais: this.props.location.state.data.pais,
+    interesses: this.props.location.state.data.interesses,
+    endereco: this.props.location.state.data.endereco,
+    casa: this.props.location.state.data.casa,
+    tags: this.props.location.state.data.tags,
+    trabalho: this.props.location.state.data.trabalho,
+    novidades: this.props.location.state.data.novidades,
+    picture: this.props.location.state.data.picture
   }
 
   handleDelete = i => {
